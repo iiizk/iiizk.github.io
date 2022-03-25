@@ -5,8 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="mysql压缩包安装, zzのblog">
-    <meta name="description" content="大家好，这次讲的是mysql压缩包安装方式和msi的安装方式。此次安装的都是5.7版本的。mysql压缩包下载mysql5.7压缩包https://downloads.mysql.com/archives/community/
-或者http">
+    <meta name="description" content="这次讲的是mysql压缩包安装方式。此次安装的都是5.7版本的。mysql压缩包下载mysql5.7压缩包https://downloads.mysql.com/archives/community/或者https://github.com">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +456,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    337
+                    323
                 </div>
                 
 
@@ -484,24 +483,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>大家好，这次讲的是mysql压缩包安装方式和msi的安装方式。此次安装的都是5.7版本的。<br>mysql压缩包<br>下载mysql5.7压缩包<br><a target="_blank" rel="noopener" href="https://downloads.mysql.com/archives/community/">https://downloads.mysql.com/archives/community/</a></p>
-<p>或者<br><a target="_blank" rel="noopener" href="https://github.com/iiizk/download/releases/download/db/mysql-5.7.36-winx64.zip">https://github.com/iiizk/download/releases/download/db/mysql-5.7.36-winx64.zip</a></p>
-<p>我们解压到E盘</p>
-<p>设置环境变量</p>
-<p>创建配置文件my.ini</p>
-<p>[mysql]<br>#设置mysql客户端默认字符集<br>default-character-set&#x3D;utf8<br>[mysqld]<br>#设置3306端口<br>port &#x3D; 3306<br>#设置mysql的安装目录<br>basedir&#x3D;E:\mysql-5.7.36-winx64<br>#设置mysql数据库的数据的存放目录<br>datadir&#x3D;E:\mysql-5.7.36-winx64\data<br>#允许最大连接数<br>max_connections&#x3D;200<br>#服务端使用的字符集默认为UTF8<br>character-set-server&#x3D;utf8<br>#创建新表时将使用的默认存储引擎<br>default-storage-engine&#x3D;INNODB<br>explicit_defaults_for_timestamp&#x3D;1<br>innodb_flush_method&#x3D;normal</p>
-<h2 id="初始化MySQL"><a href="#初始化MySQL" class="headerlink" title="初始化MySQL"></a>初始化MySQL</h2><p>以下记得用管理员cmd</p>
-<p>mysqld –initialize-insecure<br>这样可以初始化root用户密码为空<br>mysqld –initialize会生成一个随机密码<br>这里我们用mysqld –initialize-insecure</p>
-<p>这里如果报错找不到MSVCP120.dll 缺少vc++运行库我们装一个</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/iiizk/download/releases/download/db/VisualCppRedist_AIO_x86_x64_29.zip">https://github.com/iiizk/download/releases/download/db/VisualCppRedist_AIO_x86_x64_29.zip</a></p>
-<p>如果之前安装过，需要先卸载</p>
-<p>mysqld –remove<br>安装</p>
-<p>mysqld –install<br>启动mysql服务</p>
-<p>net start mysql<br>连接MySQL</p>
-<p>mysql -uroot -p<br>密码空的直接回车就好</p>
-<p>修改密码</p>
-<p>mysql&gt;<br>ALTER USER ‘root‘@’localhost’ IDENTIFIED BY ‘123456’;<br>flush privileges;<br>重新登录</p>
-<p>mysql -uroot -p123456</p>
+                <h2 id="这次讲的是mysql压缩包安装方式。此次安装的都是5-7版本的。"><a href="#这次讲的是mysql压缩包安装方式。此次安装的都是5-7版本的。" class="headerlink" title="这次讲的是mysql压缩包安装方式。此次安装的都是5.7版本的。"></a>这次讲的是mysql压缩包安装方式。此次安装的都是5.7版本的。</h2><h3 id="mysql压缩包"><a href="#mysql压缩包" class="headerlink" title="mysql压缩包"></a>mysql压缩包</h3><h3 id="下载mysql5-7压缩包"><a href="#下载mysql5-7压缩包" class="headerlink" title="下载mysql5.7压缩包"></a>下载mysql5.7压缩包</h3><p><code>https://downloads.mysql.com/archives/community/</code><br>或者<br><code>https://github.com/iiizk/download/releases/download/db/mysql-5.7.36-winx64.zip</code><br><img src="/images/mysql/m1.png" alt="m1"><br>我们解压到E盘<br>设置环境变量<br><img src="/imagesmysql/m2.png" alt="m2"><br><img src="/images/mysql/m3.png" alt="m3"><br>创建配置文件my.ini</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">[mysql]</span><br><span class="line">#设置mysql客户端默认字符集</span><br><span class="line">default-character-set=utf8 </span><br><span class="line">[mysqld]</span><br><span class="line">#设置3306端口</span><br><span class="line">port = 3306 </span><br><span class="line">#设置mysql的安装目录</span><br><span class="line">basedir=E:\mysql-5.7.36-winx64</span><br><span class="line">#设置mysql数据库的数据的存放目录</span><br><span class="line">datadir=E:\mysql-5.7.36-winx64\data</span><br><span class="line">#允许最大连接数</span><br><span class="line">max_connections=200</span><br><span class="line">#服务端使用的字符集默认为UTF8</span><br><span class="line">character-set-server=utf8</span><br><span class="line">#创建新表时将使用的默认存储引擎</span><br><span class="line">default-storage-engine=INNODB</span><br><span class="line">explicit_defaults_for_timestamp=1</span><br><span class="line">innodb_flush_method=normal</span><br></pre></td></tr></table></figure>
+<h2 id="初始化MySQL"><a href="#初始化MySQL" class="headerlink" title="初始化MySQL"></a>初始化MySQL</h2><h3 id="以下记得用管理员cmd"><a href="#以下记得用管理员cmd" class="headerlink" title="以下记得用管理员cmd"></a>以下记得用管理员cmd</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize-insecure</span><br><span class="line">这样可以初始化root用户密码为空</span><br><span class="line"></span><br><span class="line">mysqld –initialize会生成一个随机密码</span><br><span class="line">这里我们用mysqld –initialize-insecure</span><br></pre></td></tr></table></figure>
+
+<h3 id="这里如果报错找不到MSVCP120-dll-缺少vc-运行库我们装一个"><a href="#这里如果报错找不到MSVCP120-dll-缺少vc-运行库我们装一个" class="headerlink" title="这里如果报错找不到MSVCP120.dll 缺少vc++运行库我们装一个"></a>这里如果报错找不到MSVCP120.dll 缺少vc++运行库我们装一个</h3><p><code>https://github.com/iiizk/download/releases/download/db/VisualCppRedist_AIO_x86_x64_29.zip</code></p>
+<h3 id="如果之前安装过，需要先卸载"><a href="#如果之前安装过，需要先卸载" class="headerlink" title="如果之前安装过，需要先卸载"></a>如果之前安装过，需要先卸载</h3><p><code>mysqld --remove</code></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><code>mysqld --install</code></p>
+<h3 id="启动mysql服务"><a href="#启动mysql服务" class="headerlink" title="启动mysql服务"></a>启动mysql服务</h3><p><code>net start mysql</code></p>
+<h3 id="连接MySQL"><a href="#连接MySQL" class="headerlink" title="连接MySQL"></a>连接MySQL</h3><p><code>mysql -uroot -p</code><br>密码空的直接回车就好<br>修改密码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt;</span><br><span class="line">ALTER USER &#x27;root&#x27;@&#x27;localhost&#x27; IDENTIFIED BY &#x27;123456&#x27;;</span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+<h3 id="重新登录"><a href="#重新登录" class="headerlink" title="重新登录"></a>重新登录</h3><p><code>mysql -uroot -p123456</code><br><img src="/images/mysql/m4.png" alt="m4"></p>
 
                 
             </div>

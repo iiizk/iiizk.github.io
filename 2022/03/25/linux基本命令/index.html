@@ -5,9 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="linux基本命令, zzのblog">
-    <meta name="description" content="基本命令关机a
-shutdown -h now       立刻关机shutdown -h 10        10分钟后关机poweroff              立刻关机重启
-shutdown -r now       立刻重启sh">
+    <meta name="description" content="基本命令关机shutdown -h now       立刻关机shutdown -h 10        10分钟后关机poweroff              立刻关机
+重启shutdown -r now       立刻重启shut">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -458,7 +457,7 @@ shutdown -r now       立刻重启sh">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    949
+                    953
                 </div>
                 
 
@@ -485,34 +484,26 @@ shutdown -r now       立刻重启sh">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>基本命令<br>关机a</p>
-<p>shutdown -h now       立刻关机<br>shutdown -h 10        10分钟后关机<br>poweroff              立刻关机<br>重启</p>
-<p>shutdown -r now       立刻重启<br>shutdown -r 10        10分钟后重启<br>reboot                立刻重启<br>目录切换cd</p>
-<p>cd &#x2F;                  切换到根目录<br>cd ..                 切换到上一级目录<br>cd ~                  切换到home目录<br>cd -                  切换到上次访问的目录<br>目录查看ls</p>
-<p>ls                    查看当前目录下的所有目录和文件<br>ls -a                  查看当前目录下的所有目录和文件（包括隐藏的文件）<br>ls -l 或 ll           列表查看当前目录下的所有目录和文件（列表查看，显示更多信息）<br>目录操作</p>
-<p>mkdir file         在当前目录下创建一个名为file的目录<br>查看文件内容命令</p>
-<p>功能：分页显示命令more<br>more file</p>
-<p>功能：显示文件的最后几行tail<br>tail -n 10 a.txt    显示文件a.txt文件的最后10行</p>
-<p>功能：创建一个空文件touch<br>touch a.txt         在当前目录下创建一个名为a.txt的文件<br>修改文件 vi或vim</p>
-<p>【vi编辑器的3种模式】<br>基本上vi可以分为三种状态，分别是命令模式（command mode）、插入模式（Insert mode）和底行模式（last line mode），各模式的功能区分如下：</p>
-<ol>
-<li><p>命令行模式command mode）<br>   控制屏幕光标的移动，字符、字或行的删除，查找，移动复制某区段及进入Insert mode下，或者到 last line mode。<br>   命令行模式下的常用命令：<br>   【1】控制光标移动：↑，↓，j<br>   【2】删除当前行：dd<br>   【3】查找：&#x2F;字符<br>   【4】进入编辑模式：i o a<br>   【5】进入底行模式：:</p>
-</li>
-<li><p>编辑模式（Insert mode）<br>   只有在Insert mode下，才可以做文字输入，按「ESC」键可回到命令行模式。<br>   编辑模式下常用命令：<br>   【1】ESC 退出编辑模式到命令行模式；</p>
-</li>
-<li><p>底行模式（last line mode）<br>  将文件保存或退出vi，也可以设置编辑环境，如寻找字符串、列出行号……等。<br>  底行模式下常用命令：<br>  【1】退出编辑：   :q<br>  【2】强制退出：   :q!<br>  【3】保存并退出：  :wq<br>mv 和 cp</p>
-</li>
-</ol>
-<p>一、重命名目录<br>    命令：mv 当前目录  新目录</p>
-<p>二、剪切目录<br>    命令：mv 目录名称 目录的新位置<br>    示例：将&#x2F;tmp目录下的aa目录剪切到&#x2F;usr目录下面     mv &#x2F;tmp&#x2F;aa &#x2F;usr</p>
-<p>三、拷贝目录<br>    命令：cp -r 目录名称 目录拷贝的目标位置   -r代表递归<br>    示例：将&#x2F;tmp目录下的aa目录复制到&#x2F;usr目录下面     cp -r &#x2F;tmp&#x2F;aa  &#x2F;usr<br>    注意：cp命令不仅可以拷贝目录还可以拷贝文件，压缩包等，拷贝文件和压缩包时不用写-r递归<br>文件的查看命令：cat&#x2F;more&#x2F;less&#x2F;tail</p>
-<p>cat：看最后一屏<br>示例：使用cat查看aaa.txt文件，只能显示最后一屏内容<br>cat aaa.txt</p>
-<p>more：百分比显示<br>示例：使用more查看aaa.txt文件，可以显示百分比，回车可以向下一行，空格可以向下一页，q可以退出查看<br>more aaa.txt</p>
-<p>less：翻页查看<br>示例：使用less查看aaa.txt文件，可以使用键盘上的PgUp和PgDn向上    和向下翻页，q结束查看<br>less aaa.txt</p>
-<p>tail：指定行数或者动态查看</p>
-<p>示例：使用tail -10 查看aaa.txt文件的后10行，Ctrl+C结束<br>tail -10 aaa.txt</p>
-<h3 id="find"><a href="#find" class="headerlink" title="find"></a>find</h3><p>find . -name “<em>.log” -ls  在当前目录查找以.log结尾的文件，并显示详细信息。<br>find &#x2F;etc&#x2F; -perm 600   查找&#x2F;etc&#x2F;目录下权限为600的文件<br>find . -type f -name “</em>.log”  查找当目录，以.log结尾的普通文件<br>find . -type d | sort   查找当前所有目录并排序<br>find . -size +200M  查找当前目录大于100M的文件</p>
-<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><p>ctrl + l</p>
+                <h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="关机"><a href="#关机" class="headerlink" title="关机"></a>关机</h3><p><code>shutdown -h now       立刻关机</code><br><code>shutdown -h 10        10分钟后关机</code><br><code>poweroff              立刻关机</code></p>
+<h3 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h3><p><code>shutdown -r now       立刻重启</code><br><code>shutdown -r 10        10分钟后重启</code><br><code>reboot                立刻重启</code></p>
+<h3 id="目录切换cd"><a href="#目录切换cd" class="headerlink" title="目录切换cd"></a>目录切换cd</h3><p><code>cd /                  切换到根目录</code><br><code>cd ..                 切换到上一级目录</code><br><code>cd ~                  切换到home目录</code><br><code>cd -                  切换到上次访问的目录</code></p>
+<h3 id="目录查看ls"><a href="#目录查看ls" class="headerlink" title="目录查看ls"></a>目录查看ls</h3><p><code>ls                    查看当前目录下的所有目录和文件</code><br><code>ls -a                 查看当前目录下的所有目录和文件（包括隐藏的文件）</code><br><code>ls -l 或 ll           列表查看当前目录下的所有目录和文件（列表查看，显示更多信息）</code><br><code>ls -il                查看当前目录文件的详细信息</code></p>
+<h3 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h3><p><code>mkdir file         在当前目录下创建一个名为file的目录</code></p>
+<h3 id="查看文件内容命令"><a href="#查看文件内容命令" class="headerlink" title="查看文件内容命令"></a>查看文件内容命令</h3><h3 id="功能：分页显示命令more"><a href="#功能：分页显示命令more" class="headerlink" title="功能：分页显示命令more"></a>功能：分页显示命令more</h3><p><code>more file</code></p>
+<p>功能：显示文件的最后几行tail<br><code>tail -n 10 a.txt    显示文件a.txt文件的最后10行</code></p>
+<p>功能：创建一个空文件touch<br><code>touch a.txt         在当前目录下创建一个名为a.txt的文件</code></p>
+<h3 id="修改文件-vi或vim"><a href="#修改文件-vi或vim" class="headerlink" title="修改文件 vi或vim"></a>修改文件 vi或vim</h3><p><code>【vi编辑器的3种模式】</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">基本上vi可以分为三种状态，分别是命令模式（command mode）、插入模式（Insert mode）和底行模式（last line mode），各模式的功能区分如下：</span><br><span class="line">1) 命令行模式command mode）</span><br><span class="line">      控制屏幕光标的移动，字符、字或行的删除，查找，移动复制某区段及进入Insert mode下，或者到 last line mode。</span><br><span class="line">      命令行模式下的常用命令：</span><br><span class="line">      【1】控制光标移动：↑，↓，j</span><br><span class="line">      【2】删除当前行：dd </span><br><span class="line">      【3】查找：/字符</span><br><span class="line">      【4】进入编辑模式：i o a</span><br><span class="line">      【5】进入底行模式：:</span><br><span class="line">      </span><br><span class="line">2) 编辑模式（Insert mode）</span><br><span class="line">      只有在Insert mode下，才可以做文字输入，按「ESC」键可回到命令行模式。</span><br><span class="line">      编辑模式下常用命令：</span><br><span class="line">      【1】ESC 退出编辑模式到命令行模式；</span><br><span class="line">      </span><br><span class="line">3) 底行模式（last line mode）</span><br><span class="line">     将文件保存或退出vi，也可以设置编辑环境，如寻找字符串、列出行号……等。</span><br><span class="line">     底行模式下常用命令：</span><br><span class="line">     【1】退出编辑：   :q</span><br><span class="line">     【2】强制退出：   :q!</span><br><span class="line">     【3】保存并退出：  :wq</span><br></pre></td></tr></table></figure>
+
+<h3 id="mv-和-cp"><a href="#mv-和-cp" class="headerlink" title="mv 和 cp"></a>mv 和 cp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">一、重命名目录</span><br><span class="line">    命令：mv 当前目录  新目录</span><br><span class="line"></span><br><span class="line">二、剪切目录</span><br><span class="line">    命令：mv 目录名称 目录的新位置</span><br><span class="line">    示例：将/tmp目录下的aa目录剪切到/usr目录下面     mv /tmp/aa /usr</span><br><span class="line"></span><br><span class="line">三、拷贝目录</span><br><span class="line">    命令：cp -r 目录名称 目录拷贝的目标位置   -r代表递归</span><br><span class="line">    示例：将/tmp目录下的aa目录复制到/usr目录下面     cp -r /tmp/aa  /usr</span><br><span class="line">    注意：cp命令不仅可以拷贝目录还可以拷贝文件，压缩包等，拷贝文件和压缩包时不用写-r递归</span><br><span class="line">文件的查看命令：cat/more/less/tail</span><br></pre></td></tr></table></figure>
+
+<h3 id="cat：看最后一屏"><a href="#cat：看最后一屏" class="headerlink" title="cat：看最后一屏"></a>cat：看最后一屏</h3><p><code>示例：使用cat查看aaa.txt文件，只能显示最后一屏内容</code><br><code>cat aaa.txt</code></p>
+<h3 id="more：百分比显示"><a href="#more：百分比显示" class="headerlink" title="more：百分比显示"></a>more：百分比显示</h3><p><code>示例：使用more查看aaa.txt文件，可以显示百分比，回车可以向下一行，空格可以向下一页，q可以退出查看</code><br><code>more aaa.txt</code></p>
+<h3 id="less：翻页查看"><a href="#less：翻页查看" class="headerlink" title="less：翻页查看"></a>less：翻页查看</h3><p><code>示例：使用less查看aaa.txt文件，可以使用键盘上的PgUp和PgDn向上    和向下翻页，q结束查看</code><br><code>less aaa.txt</code></p>
+<h2 id="tail：指定行数或者动态查看"><a href="#tail：指定行数或者动态查看" class="headerlink" title="tail：指定行数或者动态查看"></a>tail：指定行数或者动态查看</h2><p><code>示例：使用tail -10 查看aaa.txt文件的后10行，Ctrl+C结束  </code><br><code>tail -10 aaa.txt</code></p>
+<h3 id="find"><a href="#find" class="headerlink" title="find"></a>find</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">find . -name &quot;*.log&quot; -ls  在当前目录查找以.log结尾的文件，并显示详细信息。 </span><br><span class="line">find /etc/ -perm 600   查找/etc/目录下权限为600的文件 </span><br><span class="line">find . -type f -name &quot;*.log&quot;  查找当目录，以.log结尾的普通文件 </span><br><span class="line">find . -type d | sort   查找当前所有目录并排序 </span><br><span class="line">find . -size +200M  查找当前目录大于100M的文件</span><br></pre></td></tr></table></figure>
+
+<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><p><code>ctrl + l</code></p>
 
                 
             </div>
