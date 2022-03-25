@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="zzのblog">
-    <meta name="description" content="��Һã���ν�����mysqlѹ������װ��ʽ��msi�İ�װ��ʽ���˴ΰ�װ�Ķ���5.7�汾�ġ�mysqlѹ��������mysql5.7ѹ����https://downloads.mysql.com/arch">
+    <meta name="keywords" content="mysql压缩包安装, zzのblog">
+    <meta name="description" content="大家好，这次讲的是mysql压缩包安装方式和msi的安装方式。此次安装的都是5.7版本的。mysql压缩包下载mysql5.7压缩包https://downloads.mysql.com/archives/community/
+或者http">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>zzのblog</title>
+    <title>mysql压缩包安装 | zzのblog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">mysql压缩包安装</h1>
                 </div>
             </div>
         </div>
@@ -456,7 +457,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    142
+                    337
                 </div>
                 
 
@@ -483,23 +484,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>��Һã���ν�����mysqlѹ������װ��ʽ��msi�İ�װ��ʽ���˴ΰ�װ�Ķ���5.7�汾�ġ�<br>mysqlѹ����<br>����mysql5.7ѹ����<br><a target="_blank" rel="noopener" href="https://downloads.mysql.com/archives/community/">https://downloads.mysql.com/archives/community/</a></p>
-<p>����<br><a target="_blank" rel="noopener" href="https://github.com/iiizk/download/releases/download/db/mysql-5.7.36-winx64.zip">https://github.com/iiizk/download/releases/download/db/mysql-5.7.36-winx64.zip</a></p>
-<p>���ǽ�ѹ��E��</p>
-<p>���û�������</p>
-<p>���������ļ�my.ini</p>
-<p>[mysql]<br>#����mysql�ͻ���Ĭ���ַ���<br>default-character-set&#x3D;utf8<br>[mysqld]<br>#����3306�˿�<br>port &#x3D; 3306<br>#����mysql�İ�װĿ¼<br>basedir&#x3D;E:\mysql-5.7.36-winx64<br>#����mysql���ݿ�����ݵĴ��Ŀ¼<br>datadir&#x3D;E:\mysql-5.7.36-winx64\data<br>#�������������<br>max_connections&#x3D;200<br>#�����ʹ�õ��ַ���Ĭ��ΪUTF8<br>character-set-server&#x3D;utf8<br>#�����±�ʱ��ʹ�õ�Ĭ�ϴ洢����<br>default-storage-engine&#x3D;INNODB<br>explicit_defaults_for_timestamp&#x3D;1<br>innodb_flush_method&#x3D;normal</p>
-<h2 id="��ʼ��MySQL"><a href="#��ʼ��MySQL" class="headerlink" title="��ʼ��MySQL"></a>��ʼ��MySQL</h2><p>���¼ǵ��ù���Աcmd</p>
-<p>mysqld –initialize-insecure<br>�������Գ�ʼ��root�û�����Ϊ��<br>mysqld �Cinitialize������һ���������<br>����������mysqld �Cinitialize-insecure</p>
-<p>������������Ҳ���MSVCP120.dll ȱ��vc++���п�����װһ��</p>
+                <p>大家好，这次讲的是mysql压缩包安装方式和msi的安装方式。此次安装的都是5.7版本的。<br>mysql压缩包<br>下载mysql5.7压缩包<br><a target="_blank" rel="noopener" href="https://downloads.mysql.com/archives/community/">https://downloads.mysql.com/archives/community/</a></p>
+<p>或者<br><a target="_blank" rel="noopener" href="https://github.com/iiizk/download/releases/download/db/mysql-5.7.36-winx64.zip">https://github.com/iiizk/download/releases/download/db/mysql-5.7.36-winx64.zip</a></p>
+<p>我们解压到E盘</p>
+<p>设置环境变量</p>
+<p>创建配置文件my.ini</p>
+<p>[mysql]<br>#设置mysql客户端默认字符集<br>default-character-set&#x3D;utf8<br>[mysqld]<br>#设置3306端口<br>port &#x3D; 3306<br>#设置mysql的安装目录<br>basedir&#x3D;E:\mysql-5.7.36-winx64<br>#设置mysql数据库的数据的存放目录<br>datadir&#x3D;E:\mysql-5.7.36-winx64\data<br>#允许最大连接数<br>max_connections&#x3D;200<br>#服务端使用的字符集默认为UTF8<br>character-set-server&#x3D;utf8<br>#创建新表时将使用的默认存储引擎<br>default-storage-engine&#x3D;INNODB<br>explicit_defaults_for_timestamp&#x3D;1<br>innodb_flush_method&#x3D;normal</p>
+<h2 id="初始化MySQL"><a href="#初始化MySQL" class="headerlink" title="初始化MySQL"></a>初始化MySQL</h2><p>以下记得用管理员cmd</p>
+<p>mysqld –initialize-insecure<br>这样可以初始化root用户密码为空<br>mysqld –initialize会生成一个随机密码<br>这里我们用mysqld –initialize-insecure</p>
+<p>这里如果报错找不到MSVCP120.dll 缺少vc++运行库我们装一个</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/iiizk/download/releases/download/db/VisualCppRedist_AIO_x86_x64_29.zip">https://github.com/iiizk/download/releases/download/db/VisualCppRedist_AIO_x86_x64_29.zip</a></p>
-<p>���֮ǰ��װ������Ҫ��ж��</p>
-<p>mysqld –remove<br>��װ</p>
-<p>mysqld –install<br>����mysql����</p>
-<p>net start mysql<br>����MySQL</p>
-<p>mysql -uroot -p<br>����յ�ֱ�ӻس��ͺ�</p>
-<p>�޸�����</p>
-<p>mysql&gt;<br>ALTER USER ‘root‘@’localhost’ IDENTIFIED BY ‘123456’;<br>flush privileges;<br>���µ�¼</p>
+<p>如果之前安装过，需要先卸载</p>
+<p>mysqld –remove<br>安装</p>
+<p>mysqld –install<br>启动mysql服务</p>
+<p>net start mysql<br>连接MySQL</p>
+<p>mysql -uroot -p<br>密码空的直接回车就好</p>
+<p>修改密码</p>
+<p>mysql&gt;<br>ALTER USER ‘root‘@’localhost’ IDENTIFIED BY ‘123456’;<br>flush privileges;<br>重新登录</p>
 <p>mysql -uroot -p123456</p>
 
                 
@@ -730,7 +731,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Fri Mar 25 2022 18:35:27 GMT+0800',
+    id: 'Fri Mar 25 2022 21:02:19 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -767,13 +768,13 @@ gitment.render('gitment-content');
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/25/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">
+                <a href="/2022/03/25/Vmware%E8%AE%B8%E5%8F%AF%E8%AF%81/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Vmware许可证">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Vmware许可证</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -808,9 +809,9 @@ gitment.render('gitment-content');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql常用命令">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">mysql常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1031,7 +1032,7 @@ gitment.render('gitment-content');
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">1.3k</span>
+                        class="white-color">4.3k</span>
             
             
             
